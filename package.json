@@ -1,0 +1,52 @@
+{
+  "name": "@yadacoin/agent-auth",
+  "version": "1.2.0",
+  "description": "Client-side JavaScript SDK for the YadaCoin KEL Agent Auth Protocol",
+  "type": "module",
+  "main": "./yadacoin-agent-auth.mjs",
+  "module": "./yadacoin-agent-auth.mjs",
+  "exports": {
+    ".": {
+      "import": "./yadacoin-agent-auth.mjs"
+    }
+  },
+  "files": [
+    "yadacoin-agent-auth.mjs",
+    "README.md"
+  ],
+  "keywords": [
+    "yadacoin",
+    "did",
+    "verifiable-credentials",
+    "agent-auth",
+    "blockchain",
+    "w3c-vc",
+    "secp256k1"
+  ],
+  "author": "Matthew Vogel <matt@yadacoin.io>",
+  "license": "YOSL-1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdxwebdev/yadacoin-agent-auth-js.git"
+  },
+  "homepage": "https://pdxwebdev.github.io/yadacoin-agent-auth-spec",
+  "bugs": {
+    "url": "https://github.com/pdxwebdev/yadacoin-agent-auth-js/issues"
+  },
+  "peerDependencies": {
+    "@noble/curves": ">=1.0.0",
+    "@noble/hashes": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@noble/curves": "^1.8.1",
+    "@noble/hashes": "^1.7.2",
+    "vitest": "^1.0.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "node --check yadacoin-agent-auth.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
